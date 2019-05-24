@@ -28,13 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lbView = new System.Windows.Forms.ListBox();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.txtList = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // lbView
+            // 
+            this.lbView.FormattingEnabled = true;
+            this.lbView.ItemHeight = 12;
+            this.lbView.Location = new System.Drawing.Point(12, 12);
+            this.lbView.Name = "lbView";
+            this.lbView.Size = new System.Drawing.Size(278, 160);
+            this.lbView.TabIndex = 0;
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(13, 179);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(41, 12);
+            this.lblResult.TabIndex = 1;
+            this.lblResult.Text = "결과 : ";
+            // 
+            // txtList
+            // 
+            this.txtList.Location = new System.Drawing.Point(12, 195);
+            this.txtList.Name = "txtList";
+            this.txtList.Size = new System.Drawing.Size(278, 21);
+            this.txtList.TabIndex = 2;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnAdd.Location = new System.Drawing.Point(12, 222);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(278, 64);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "추가";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(302, 302);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txtList);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.lbView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Form1";
+            this.Text = "리스트추가";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox lbView;
+        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.TextBox txtList;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
 
